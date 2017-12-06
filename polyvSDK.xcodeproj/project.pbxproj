@@ -282,6 +282,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06086EA1FD7D54E0038A894 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				E51C09841E5BE88F006FE206 /* AlicloudHttpDNS.framework */,
+				E51C09861E5BE88F006FE206 /* UTDID.framework */,
+				E51C09851E5BE88F006FE206 /* AlicloudUtils.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		CBA3710F196E6549008E95ED = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +299,7 @@
 				CBA37140196E6549008E95ED /* polyvSDKTests */,
 				CBA3711A196E6549008E95ED /* Frameworks */,
 				CBA37119196E6549008E95ED /* Products */,
+				B06086EA1FD7D54E0038A894 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -645,6 +656,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = easefun;
 				TargetAttributes = {
+					CBA37117196E6549008E95ED = {
+						DevelopmentTeam = VG246C95H6;
+					};
 					CBA37138196E6549008E95ED = {
 						TestTargetID = CBA37117196E6549008E95ED;
 					};
@@ -881,7 +895,7 @@
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VG246C95H6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -916,7 +930,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VG246C95H6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
