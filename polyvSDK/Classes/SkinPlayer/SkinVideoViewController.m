@@ -415,7 +415,7 @@ typedef NS_ENUM(NSInteger, panHandler) {
 
 // 播放完成或退出
 - (void)onMPMoviePlayerPlaybackDidFinishNotification:(NSNotification *)notification {
-	[self.videoControl.indicatorView stopAnimating];
+	//[self.videoControl.indicatorView stopAnimating];
 	[self syncPlayButtonState];
 	
 	MPMovieFinishReason finishReason = [notification.userInfo[MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] integerValue];
@@ -523,6 +523,7 @@ typedef NS_ENUM(NSInteger, panHandler) {
 	[self.videoControl autoFadeOutControlBar];
 	[self setCurrentPlaybackTime:floor(slider.value)];
 	[self play];
+	_isSeeking = !(self.loadState & MPMovieLoadStatePlayable);
 }
 
 // 倍速播放
@@ -1092,6 +1093,8 @@ typedef NS_ENUM(NSInteger, panHandler) {
 				[self.danmuManager initStart];
 			}
 			self.videoControl.sendDanmuButton.hidden = NO;
+		} else {
+			self.videoControl.sendDanmuButton.hidden = YES;
 		}
 		
 		self.videoControl.danmuButton.hidden = !self.enableDanmuDisplay;
